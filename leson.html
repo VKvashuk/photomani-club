@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>photomania-club</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/leson.css">
+  <link rel="stylesheet" href="fonts/AvenirNextCyr/stylesheet.css">
+  <link rel="stylesheet" href="fonts/fontawesome/css/all.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__menu-btn">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+        </div>
+        
+        <img class="header__logo" src="img/logoBlack.png" alt="Фотомания">
+        <div class="header__user-wrp">
+            <form class="header__search-form" action="/">
+                <input type="text" placeholder="Search" id="user-search">
+                <label for="user-search">
+                    <button><i class="fas fa-search"></i></button>
+                </label>
+            </form>
+            <a class="header__user-link" href="#" >
+                <img class="header__user-img" src="img/user.png" alt="User">
+            </a>
+            
+        </div>
+        <div class="header__options">
+            <ul>
+                <li class="header__option-name">Ivanov Ivan</li>
+                <li class="header__options-line"></li>
+                <li><a href="#">My Profile</a></li>
+                
+                <li><a href="#">My Favorites</a></li>
+                <li><a href="#">Support</a></li>
+                <li class="header__options-line"></li>
+                <li class="header__email">izimbitskiy@gmail.com</li>
+                <li><a href="#">Log Out</a></li>
+            </ul>
+        </div>
+    </header>
+    <aside class="sidebar">
+        <img class="sidebar__logo" src="img/logoWhite.png" alt="">
+        <ul>
+            <li>
+                <a href="#"><i class="fas fa-home"></i><span>ДОМОЙ</span></a>
+            </li>
+            <li class="sidebar__submenu">
+                <a class="sidebar__no-hover" href="#"><i class="fas fa-graduation-cap"></i><span>Библиотека <i class="fas fa-sort-down"></i></span></a>
+
+                <ul class="sidebar__submenu-block">
+                    <li><a href="#courses">Курсы</a></li>
+                    <li><a href="#master-classes">Мастер классы</a></li>
+                    <li><a href="#workshops">Воркшопы</a></li>
+                    <li><a href="#">Книги</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-play"></i><span>Онлайн трансляции</span></a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/photomaniaua/" target="_blank"><i class="fas fa-users"></i><span>СООБЩЕСТВО</span></a>
+            </li>
+        </ul>
+        <div class="sidebar__social">
+            <a href="https://www.facebook.com/photomaniaua/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/photomaniaua/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/c/Фотомания/noodlemx?sub_confirmation=1" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://t.me/photomaniaua" target="_blank"><i class="fab fa-telegram"></i></a>
+            
+        </div>
+        
+    </aside>
+    <main class="main main-leson">
+        <div class="container">
+            <h3>21 Day Launch Plan</h3>
+        </div>
+            <!-- <h2>Доступно мне</h2> -->
+        <section class="progress">
+            <div class="container">
+                <div class="progress__wrapper">
+                    <img src="img/post-img.png" alt="">
+                    <div class="progress__block">
+                        <h3 class="progress__title">21 Day Launch Plan</h3>
+                        <p class="progress__subtitle">From Zero to Fully Functioning Marketing Funnel in 21 Days</p>
+                        <small>Your Progress</small>
+                        <p class="progress__complete">0.0% Complete</p>
+                        <div class="progress__indicator"></div>
+                        <a class="progress__btn" href="#">Continue Learning</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="about">
+            <div class="about__tab">
+                <div class="container">
+                    <div class="about__btn-wrp">
+                        <button class="about__btn-overview js-active">Overview</button>
+                        <button class="about__btn-course">Course Content</button>
+                    </div>
+                </div>
+            </div>
+            <div class="about__course js-active">
+                <div class="container">
+                    <div class="about__first-block">
+                        <h4>About This Course</h4>
+                        <div class="about__preview">
+                            <div class="about__video">
+                                <div class="about__video--ratio">
+                                    <iframe class="about__video--content" src="https://player.vimeo.com/video/272094253?autoplay=1&amp;quality=1080p" width="640" height="360" allowfullscreen=""></iframe>
+                                </div>
+                            </div>
+                            <div class="about__autor">
+                                <div class="about__photo-wrp">
+                                    <img src="img/autor-photo.jpg" alt="">
+                                    <div class="about__name-wrp">
+                                        <p class="about__name">Ryan Deiss</p>
+                                        <p class="about__position">Founder and CEO, DigitalMarketer</p>
+                                    </div>
+                                </div>
+                                <p class="about__auto-description">
+                                    Ryan Deiss is the founder and CEO of DigitalMarketer. Over the last 36 months Ryan and his team have invested over $15,000,000 on marketing tests, generated tens of millions of unique visitors, sent well over a BILLION emails, and run approximately 3,000 split and multi-variant tests. Ryan is also a highly sought after speaker and consultant whose work has impacted over 200,000 businesses in 68 different countries. Connect with Ryan on Twitter.
+                                </p>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="about__content">
+                <div class="about__section">
+                    <div class="about__section-title">
+                        <p>Section 1</p>
+                        <h4>Start Here</h4>
+                    </div>
+                    <ul>
+                        <li><a href="#">From the Author</a></li>
+                        <li><a href="#">How to Get the Most Out Of Your Execution Plan</a></li>
+                        <li><a href="#">Access The Resources</a></li>
+                        <li><a href="#">Watch This First!</a></li>
+                        <li><a href="#">7 Conversion Hacks to Triple Your Business</a></li>
+                        <li><a href="#">Case Study: Operation Disaster</a></li>
+                        <li><a href="#">3X Leads and Sales</a></li>
+                        <li><a href="#">Perpetual Traffic</a></li>
+                    </ul>
+                </div>
+                <div class="about__section">
+                    <div class="about__section-title">
+                        <p>Section 1</p>
+                        <h4>Start Here</h4>
+                    </div>
+                    <ul>
+                        <li><a href="#">From the Author</a></li>
+                        <li><a href="#">How to Get the Most Out Of Your Execution Plan</a></li>
+                        <li><a href="#">Access The Resources</a></li>
+                        <li><a href="#">Watch This First!</a></li>
+                        <li><a href="#">7 Conversion Hacks to Triple Your Business</a></li>
+                        <li><a href="#">Case Study: Operation Disaster</a></li>
+                        <li><a href="#">3X Leads and Sales</a></li>
+                        <li><a href="#">Perpetual Traffic</a></li>
+                    </ul>
+                </div>
+                <div class="about__section">
+                    <div class="about__section-title">
+                        <p>Section 1</p>
+                        <h4>Start Here</h4>
+                    </div>
+                    <ul>
+                        <li><a href="#">From the Author</a></li>
+                        <li><a href="#">How to Get the Most Out Of Your Execution Plan</a></li>
+                        <li><a href="#">Access The Resources</a></li>
+                        <li><a href="#">Watch This First!</a></li>
+                        <li><a href="#">7 Conversion Hacks to Triple Your Business</a></li>
+                        <li><a href="#">Case Study: Operation Disaster</a></li>
+                        <li><a href="#">3X Leads and Sales</a></li>
+                        <li><a href="#">Perpetual Traffic</a></li>
+                    </ul>
+                </div>
+                <div class="about__section">
+                    <div class="about__section-title">
+                        <p>Section 1</p>
+                        <h4>Start Here</h4>
+                    </div>
+                    <ul>
+                        <li><a href="#">From the Author</a></li>
+                        <li><a href="#">How to Get the Most Out Of Your Execution Plan</a></li>
+                        <li><a href="#">Access The Resources</a></li>
+                        <li><a href="#">Watch This First!</a></li>
+                        <li><a href="#">7 Conversion Hacks to Triple Your Business</a></li>
+                        <li><a href="#">Case Study: Operation Disaster</a></li>
+                        <li><a href="#">3X Leads and Sales</a></li>
+                        <li><a href="#">Perpetual Traffic</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </section>
+        <div class="coursers">
+            <div class="container">
+                <h3>Related Execution Plans</h3>
+                <div class="courses__blocks">
+                    <div class="courses__block">
+                        <a class="courses__block-link" href="#">
+                            <div class="courses__block-img">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrGtt-2wYohPL7_p54r5AZRTc97x3oE1JyeJyfRnVf_6gUtVZu3Q" alt="">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="courses__block-texts">
+                                <p class="courses__block-name">Copywriting Mastery</p>
+                                <p class="courses__block-descr">To survive today, companies need direct-response copy that gets people to take specific, measurable </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="courses__block">
+                        <a class="courses__block-link" href="#">
+                            <div class="courses__block-img">
+                                <img src="img/post-img.png" alt="">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="courses__block-texts">
+                                <p class="courses__block-name">Copywriting Mastery</p>
+                                <p class="courses__block-descr">To survive today, companies need direct-response copy that gets people to take specific, measurable </p>
+                            </div>
+                        </a> 
+                    </div>
+                    <div class="courses__block">
+                        <a class="courses__block-link" href="#">
+                            <div class="courses__block-img">
+                                <img src="img/post-img.png" alt="">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="courses__block-texts">
+                                <p class="courses__block-name">Copywriting Mastery</p>
+                                <p class="courses__block-descr">To survive today, companies need direct-response copy that gets people to take specific, measurable </p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <ul>
+            <li><a href="#">© 2017 DigitalMarketer.com</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+    </footer>
+
+    <script src="js/user-modal.js"></script>
+    <script src="js/leson.js"></script>
+</body>
+</html>

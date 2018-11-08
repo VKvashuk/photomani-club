@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>photomania-club</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/profile.css">
+
+<link rel="stylesheet" href="fonts/AvenirNextCyr/stylesheet.css">
+<link rel="stylesheet" href="fonts/fontawesome/css/all.css">
+</head>
+<body>
+    <header class="header">
+        
+        <img class="header__logo" src="img/logoBlack.png" alt="Фотомания">
+    </header>
+
+    <main class="main main-profile main-register">
+        <div class="container">
+            <section class="settings">
+                <div class="settings__wrp">
+                    <div class="settings__profile-wrp">
+                        <h3>РЕГИСТРАЦИЯ</h3>
+                        <form action="/">
+                            <label>
+                                Электронная почта
+                                <input type="email" required value="" >
+                            </label>
+                            <label>
+                                Имя
+                                <input type="text" required>
+                            </label>
+                            <label>
+                                Фамилия
+                                <input type="text" required> 
+                            </label>
+                            <label>
+                                Пароль
+                                <input type="password" required>
+                            </label>
+                             <label>
+                                Повторите пароль
+                                <input type="password" required>
+                            </label>
+                            <label>
+                                Город
+                                <input type="text" required>
+                            </label>
+                            <div class="settings__sex">
+                                <p>Пол</p>
+                                <label>
+                                    <input name="sex" type="radio" checked>
+                                    <span class="checkbox-indicator"></span>
+                                    Женский
+                                </label>
+                                <label>
+                                    
+                                    <input name="sex" type="radio">
+                                    <span class="checkbox-indicator"></span>
+                                    Мужской
+                                </label>
+                            </div>
+                           <div class="settings__subscribe">
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="checkbox-indicator"></span>
+                                    Принимаю условия <a href="">оферты</a>
+                                    
+                                </label>
+                            </div>
+                            <div class="settings__social">
+                                <p>Войти через социальные сети</p>
+                                <div class="settings__social-wrp">
+                                    <a href="#"><i class="fab fa-vk"></i></a>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                </div>
+                            </div>
+                            <p class="register__agreement">Отправляя данные, вы соглашаетесь с <a href="">Политикой конфиденциальности</a></p>
+                            <button class="settings__profile-btn-save">Сохранить</button>
+                        </form>
+                        
+                    </div>
+                </div> 
+            </section>
+            
+        </div>
+            
+    </main>
+    <footer class="footer footer--center">
+        <ul>
+            <li><a href="#">© 2017 DigitalMarketer.com</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+    </footer>
+    <link rel="stylesheet" href="css/modal.css">
+    <div class="modal">
+        <div class="modal__wrp">
+            <form >
+                <label>
+                    Имя
+                    <input type="text" required="">
+                </label>
+                <label>
+                    Фамилия
+                    <input type="text" required=""> 
+                </label>
+                <label>
+                    Номер
+                    <input type="number" required=""> 
+                </label>
+                <button class="modal__btn" type="submit">Сохранить</button>
+                
+            </form>
+        </div>
+        
+    </div>
+    <script>
+        var modal = document.querySelector('.modal');
+        var modalBtn = modal.querySelector('.modal__btn');
+        var modalImputs = modal.querySelectorAll('.modal input');
+        var modalForm = modal.querySelector('.modal form');
+
+
+        function prevDef (e) {e.preventDefault()};
+
+        document.addEventListener('mousewheel', prevDef);
+
+        modalForm.addEventListener('submit', function(ev){
+            ev.preventDefault();
+
+            modal.classList.add('modal--hidden');
+            document.removeEventListener('mousewheel', prevDef);
+        })
+    </script>
+
+</body>
+</html>

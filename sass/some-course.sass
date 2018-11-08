@@ -1,0 +1,146 @@
+=r($width)
+  @media only screen and (max-width: $width+ "px")
+    @content
+
+/////////////////////////////
+
+.main-task
+    .container
+        padding-top: 0px
+.name__task
+    background: #ffca00
+    padding: 20px
+    h3 
+        text-align: center
+.task
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    align-items: flex-start
+
+    +r(1050)
+        flex-direction: column
+    &__list
+        max-width: 300px
+        background: #fff
+        flex-shrink: 0
+        margin-top: 10px
+
+        +r(1050)
+            width: 100%
+            max-width: 100%
+            margin-top: 10px
+    &__item.js-open 
+        ul
+            display: block
+        p:before
+            transform: rotate(180deg)
+    &__item
+        p 
+            font-size: 18px
+            border-bottom: 1px solid lightgray
+            padding: 5px 15px
+            padding-right: 25px
+            position: relative
+            font-weight: 400
+            cursor: pointer
+            &:hover
+                background: #f7f7f9
+            &:before
+                position: absolute
+                content: '\f107'
+                color: #000
+                font-size: 22px
+                top: 5px
+                right: 6px
+                font-weight: 900
+                font-family: "Font Awesome 5 Free"
+    ul
+        display: none
+        border-bottom: 1px solid lightgray
+    li
+        font-weight: 400
+        padding: 5px 15px
+        padding-left: 30px
+        background: #f8f8f8
+        &:nth-child(odd)
+            background: #fff
+    i 
+        // position: absolute
+        font-size: 16px
+        margin-right: 10px
+    .fa-lock,
+    .fa-lock-open
+        top: 5px
+        left: 4px
+    .fa-lock-open
+        color: #00ca15
+    &__check-wrp
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        padding: 15px
+        background: #fff
+        margin-bottom: 10px
+        align-items: flex-start
+        p 
+            font-size: 18px
+    &__check
+        position: relative
+        padding: 7px
+        font-size: 22px
+        text-align: center
+        font-weight: 500      
+        background: #246cff
+        color: #fff
+        margin-left: auto
+        border-radius: 5px
+        flex-shrink: 0
+
+        +r(600)
+            margin: 0 auto
+            font-size: 18px
+        .checked
+            display: none
+        &.js-check
+            background: #00ca15
+            .checked
+                display: block
+            .no-checked
+                display: none
+    &__video-wrp
+        box-sizing: border-box
+        width: 100%
+        margin-top: 10px
+        margin-left: 10px
+
+        +r(1050)
+            margin-left: 0
+    &__video
+        position: relative
+        width: 100%
+        padding: 15px
+        margin-bottom: 20px
+        &--ratio
+            padding-top: 56.25%
+            height: 0
+        &--content
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            left: 50%
+            border: 0
+            transform: translateX(-50%)
+    &__main-wrp
+        background: #fff
+        padding: 15px
+
+
+          
+
+

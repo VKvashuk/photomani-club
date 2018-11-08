@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>photomania-club</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/leson.css">
+<link rel="stylesheet" href="fonts/AvenirNextCyr/stylesheet.css">
+<link rel="stylesheet" href="fonts/fontawesome/css/all.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__menu-btn">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+        </div>
+        
+        <img class="header__logo" src="img/logoBlack.png" alt="Фотомания">
+        <div class="header__user-wrp">
+            <form class="header__search-form" action="/">
+                <input type="text" placeholder="Search" id="user-search">
+                <label for="user-search">
+                    <button><i class="fas fa-search"></i></button>
+                </label>
+                
+            </form>
+            <a class="header__user-link" href="#" >
+                <img class="header__user-img" src="img/user.png" alt="User">
+            </a>
+            
+        </div>
+        <div class="header__options">
+            <ul>
+                <li class="header__option-name">Ivanov Ivan</li>
+                <li class="header__options-line"></li>
+                <li><a href="#">My Profile</a></li>
+                
+                <li><a href="#">My Favorites</a></li>
+                <li><a href="#">Support</a></li>
+                <li class="header__options-line"></li>
+                <li class="header__email">izimbitskiy@gmail.com</li>
+                <li><a href="#">Log Out</a></li>
+            </ul>
+        </div>
+    </header>
+    <aside class="sidebar">
+        <img class="sidebar__logo" src="img/logoWhite.png" alt="">
+        <ul>
+            <li>
+                <a href="#"><i class="fas fa-home"></i><span>ДОМОЙ</span></a>
+            </li>
+            <li class="sidebar__submenu">
+                <a class="sidebar__no-hover" href="#"><i class="fas fa-graduation-cap"></i><span>Библиотека <i class="fas fa-sort-down"></i></span></a>
+
+                <ul class="sidebar__submenu-block">
+                    <li><a href="#courses">Курсы</a></li>
+                    <li><a href="#master-classes">Мастер классы</a></li>
+                    <li><a href="#workshops">Воркшопы</a></li>
+                    <li><a href="#">Книги</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-play"></i><span>Онлайн трансляции</span></a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/photomaniaua/" target="_blank"><i class="fas fa-users"></i><span>СООБЩЕСТВО</span></a>
+            </li>
+        </ul>
+        <div class="sidebar__social">
+            <a href="https://www.facebook.com/photomaniaua/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/photomaniaua/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/c/Фотомания/noodlemx?sub_confirmation=1" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://t.me/photomaniaua" target="_blank"><i class="fab fa-telegram"></i></a>
+            
+        </div>
+        
+    </aside>
+    <main class="main courses">
+        <div class="container">
+            <!-- <h2>Доступно мне</h2> -->
+            <span id="courses"></span>
+            <h3>Мои курсы</h3>
+            <div class="courses__blocks">
+                <div class="courses__block">
+                    <a class="courses__block-link" href="#">
+                        <div class="courses__block-img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrGtt-2wYohPL7_p54r5AZRTc97x3oE1JyeJyfRnVf_6gUtVZu3Q" alt="">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="courses__block-texts">
+                            <p class="courses__block-name">Copywriting Mastery</p>
+                            <p class="courses__block-descr">To survive today, companies need direct-response copy that gets people to take specific, measurable </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="courses__block">
+                    <a class="courses__block-link" href="#">
+                        <div class="courses__block-img">
+                            <img src="img/post-img.png" alt="">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="courses__block-texts">
+                            <p class="courses__block-name">Copywriting Mastery</p>
+                            <p class="courses__block-descr">To survive today, companies need direct-response copy that gets people to take specific, measurable </p>
+                        </div>
+                    </a> 
+                </div>
+                <div class="courses__block">
+                    <a class="courses__block-link" href="#">
+                        <div class="courses__block-img">
+                            <img src="img/post-img.png" alt="">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="courses__block-texts">
+                            <p class="courses__block-name">Copywriting Mastery</p>
+                            <p class="courses__block-descr">To survive today, companies need direct-response copy that gets people to take specific, measurable </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="courses__block">
+                    <a class="courses__block-link" href="#">
+                        <div class="courses__block-img">
+                            <img src="img/post-img.png" alt="">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="courses__block-texts">
+                            <p class="courses__block-name">Copywriting Mastery</p>
+                            <p class="courses__block-descr">To survive today, companies need direct-response copy that gets people to take specific, measurable </p>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+            <h3>Все курсы</h3>
+            <div class="courses__blocks">
+                <div class="courses__block">
+                    <a class="courses__block-link" href="#">
+                        <div class="courses__block-img">
+                            <img src="img/post-img.png" alt="">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="courses__block-texts">
+                            <p class="courses__block-name">Copywriting Mastery</p>
+                            <p class="courses__block-descr">To survive today, companies need direct-response copy that gets people to take specific, measurable </p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="courses__block">
+                    <a class="courses__block-link" href="#">
+                        <div class="courses__block-img">
+                            <img src="img/post-img.png" alt="">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="courses__block-texts">
+                            <p class="courses__block-name">Copywriting Mastery</p>
+                            <p class="courses__block-descr">To survive today, companies need direct-response copy that gets people to take specific, measurable </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="courses__block">
+                    <a class="courses__block-link" href="#">
+                        <div class="courses__block-img">
+                            <img src="img/post-img.png" alt="">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="courses__block-texts">
+                            <p class="courses__block-name">Copywriting Mastery</p>
+                            <p class="courses__block-descr">To survive today, companies need direct-response copy that gets people to take specific, measurable </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="courses__block">
+                    <a class="courses__block-link" href="#">
+                        <div class="courses__block-img">
+                            <img src="img/post-img.png" alt="">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="courses__block-texts">
+                            <p class="courses__block-name">Copywriting Mastery</p>
+                            <p class="courses__block-descr">To survive today, companies need direct-response copy that gets people to take specific, measurable </p>
+                        </div>
+                    </a>
+                </div>
+              
+            </div>
+            
+            <span id="master-classes"></span>
+            <h3>Мои мастер классы</h3>
+     
+            <div class="courses__blocks">
+                
+                <div class="courses__block">
+                    <a class="courses__block-link" href="#">
+                        <div class="courses__block-img">
+                            <img src="img/post-img.png" alt="">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="courses__block-texts">
+                            <p class="courses__block-name">Copywriting Mastery</p>
+                            <p class="courses__block-descr">To survive today, companies need direct-response copy that gets people to take specific, measurable </p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="courses__block">
+                    <a class="courses__block-link" href="#">
+                        <div class="courses__block-img">
+                            <img src="img/post-img.png" alt="">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="courses__block-texts">
+                            <p class="courses__block-name">Copywriting Mastery</p>
+                            <p class="courses__block-descr">To survive today, companies need direct-response copy that gets people to take specific, measurable </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="courses__block">
+                    <a class="courses__block-link" href="#">
+                        <div class="courses__block-img">
+                            <img src="img/post-img.png" alt="">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="courses__block-texts">
+                            <p class="courses__block-name">Copywriting Mastery</p>
+                            <p class="courses__block-descr">To survive today, companies need direct-response copy that gets people to take specific, measurable </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="courses__block">
+                    <a class="courses__block-link" href="#">
+                        <div class="courses__block-img">
+                            <img src="img/post-img.png" alt="">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="courses__block-texts">
+                            <p class="courses__block-name">Copywriting Mastery</p>
+                            <p class="courses__block-descr">To survive today, companies need direct-response copy that gets people to take specific, measurable </p>
+                        </div>
+                    </a>
+                </div>
+              
+            </div>
+
+
+            <h3>Все мастер классы</h3>
+        
+            <div class="courses__blocks">
+                
+                <div class="courses__block">
+                    <a class="courses__block-link" href="#">
+                        <div class="courses__block-img">
+                            <img src="img/post-img.png" alt="">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="courses__block-texts">
+                            <p class="courses__block-name">Copywriting Mastery</p>
+                            <p class="courses__block-descr">To survive today, companies need direct-response copy that gets people to take specific, measurable </p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="courses__block">
+                    <a class="courses__block-link" href="#">
+                        <div class="courses__block-img">
+                            <img src="img/post-img.png" alt="">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="courses__block-texts">
+                            <p class="courses__block-name">Copywriting Mastery</p>
+                            <p class="courses__block-descr">To survive today, companies need direct-response copy that gets people to take specific, measurable </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="courses__block">
+                    <a class="courses__block-link" href="#">
+                        <div class="courses__block-img">
+                            <img src="img/post-img.png" alt="">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="courses__block-texts">
+                            <p class="courses__block-name">Copywriting Mastery</p>
+                            <p class="courses__block-descr">To survive today, companies need direct-response copy that gets people to take specific, measurable </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="courses__block">
+                    <a class="courses__block-link" href="#">
+                        <div class="courses__block-img">
+                            <img src="img/post-img.png" alt="">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="courses__block-texts">
+                            <p class="courses__block-name">Copywriting Mastery</p>
+                            <p class="courses__block-descr">To survive today, companies need direct-response copy that gets people to take specific, measurable </p>
+                        </div>
+                    </a>
+                </div>
+              
+            </div>
+
+            <span id="workshops"></span>
+            <h3>Мои воркшопы</h3>
+     
+            <div class="courses__blocks">
+                
+                <div class="courses__block">
+                    <a class="courses__block-link" href="#">
+                        <div class="courses__block-img">
+                            <img src="img/post-img.png" alt="">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="courses__block-texts">
+                            <p class="courses__block-name">Copywriting Mastery</p>
+                            <p class="courses__block-descr">To survive today, companies need direct-response copy that gets people to take specific, measurable </p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="courses__block">
+                    <a class="courses__block-link" href="#">
+                        <div class="courses__block-img">
+                            <img src="img/post-img.png" alt="">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="courses__block-texts">
+                            <p class="courses__block-name">Copywriting Mastery</p>
+                            <p class="courses__block-descr">To survive today, companies need direct-response copy that gets people to take specific, measurable </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="courses__block">
+                    <a class="courses__block-link" href="#">
+                        <div class="courses__block-img">
+                            <img src="img/post-img.png" alt="">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="courses__block-texts">
+                            <p class="courses__block-name">Copywriting Mastery</p>
+                            <p class="courses__block-descr">To survive today, companies need direct-response copy that gets people to take specific, measurable </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="courses__block">
+                    <a class="courses__block-link" href="#">
+                        <div class="courses__block-img">
+                            <img src="img/post-img.png" alt="">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="courses__block-texts">
+                            <p class="courses__block-name">Copywriting Mastery</p>
+                            <p class="courses__block-descr">To survive today, companies need direct-response copy that gets people to take specific, measurable </p>
+                        </div>
+                    </a>
+                </div>
+              
+            </div>
+
+            <h3>Все воркшопы</h3>
+        
+            <div class="courses__blocks">
+                
+                <div class="courses__block">
+                    <a class="courses__block-link" href="#">
+                        <div class="courses__block-img">
+                            <img src="img/post-img.png" alt="">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="courses__block-texts">
+                            <p class="courses__block-name">Copywriting Mastery</p>
+                            <p class="courses__block-descr">To survive today, companies need direct-response copy that gets people to take specific, measurable </p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="courses__block">
+                    <a class="courses__block-link" href="#">
+                        <div class="courses__block-img">
+                            <img src="img/post-img.png" alt="">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="courses__block-texts">
+                            <p class="courses__block-name">Copywriting Mastery</p>
+                            <p class="courses__block-descr">To survive today, companies need direct-response copy that gets people to take specific, measurable </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="courses__block">
+                    <a class="courses__block-link" href="#">
+                        <div class="courses__block-img">
+                            <img src="img/post-img.png" alt="">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="courses__block-texts">
+                            <p class="courses__block-name">Copywriting Mastery</p>
+                            <p class="courses__block-descr">To survive today, companies need direct-response copy that gets people to take specific, measurable </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="courses__block">
+                    <a class="courses__block-link" href="#">
+                        <div class="courses__block-img">
+                            <img src="img/post-img.png" alt="">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="courses__block-texts">
+                            <p class="courses__block-name">Copywriting Mastery</p>
+                            <p class="courses__block-descr">To survive today, companies need direct-response copy that gets people to take specific, measurable </p>
+                        </div>
+                    </a>
+                </div>
+              
+            </div>
+
+        
+        </div>
+    </main>
+    <footer class="footer">
+        <ul>
+            <li><a href="#">© 2017 DigitalMarketer.com</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+    </footer>
+
+    <script src="js/user-modal.js"></script>
+</body>
+</html>

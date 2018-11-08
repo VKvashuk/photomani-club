@@ -1,0 +1,317 @@
+=r($width)
+  @media only screen and (max-width: $width+ "px")
+    @content
+
+/////////////////////////////
+
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button 
+    -webkit-appearance: none
+input[type='number'] 
+    -moz-appearance: textfield
+
+.main-profile
+    background: #fff
+    border-bottom: 1px solid #dadada
+.user
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-top: 10px
+    padding-bottom: 40px
+
+    +r(600)
+        flex-direction: column
+    a
+        color: #ffca00
+        font-weight: 400
+        text-decoration: underline
+        &:hover
+            text-decoration: none
+    label
+        color: #ffca00
+        font-weight: 400
+        text-decoration: underline
+        cursor: pointer
+        &:hover
+            text-decoration: none
+    input
+        display: none
+    &__profile-wrp
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        align-items: center
+        font-weight: 500
+        padding-right: 20px
+
+        +r(600)
+            margin-bottom: 30px
+        span
+            color: #929292
+        img
+            width: 75px
+            height: 75px
+            object-fit: cover
+            border-radius: 50%
+            margin-right: 15px
+        p
+            text-transform: uppercase
+    &__bonus-wrp
+        span
+            color: #ffca00
+            font-weight: 500
+.settings
+    &__btns
+        width: 100%
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        button
+            width: 50%
+            display: block
+            background: inherit
+            border: none
+            padding: 10px
+            color: #646464
+            background: #f3f3f3
+            text-transform: uppercase
+            border: 1px solid #dadada
+            border-top-right-radius: 10px
+            border-top-left-radius: 10px
+        .js-active
+            background: inherit
+            border-bottom: 1px solid #fff
+    &__profile-wrp,
+    &__address-wrp
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        flex-direction: column
+        align-items: center 
+        border: 1px solid #dadada
+        border-top: none
+        border-bottom-right-radius: 10px
+        border-bottom-left-radius: 10px
+        padding: 10px
+        padding-top: 50px
+        padding-bottom: 50px
+        display: none   
+        &.js-active
+            display: flex
+    h3
+        margin-bottom: 30px
+        font-weight: 500
+        text-align: center
+    form
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        flex-direction: column
+        align-items: center 
+        max-width: 350px
+        width: 100%
+        padding: 10px
+        label
+            text-align: center
+            margin-bottom: 10px
+            margin-top: 10px
+            // max-width: 300px
+            width: 100%
+        input
+            display: block
+            width: 100%
+            box-sizing: border-box
+            padding: 5px 10px
+            border: 1px solid #d5d5d5
+            border-radius: 5px
+            text-align: center
+            font-size: 16px
+            color: #4A4A4A
+            &:focus
+                box-shadow: 0 0 2px 1px #ffca00
+                outline: none
+        input[readonly=true]
+            background: #f3f3f3
+            &:focus
+                box-shadow: none
+        a
+            color: #ffca00
+            font-weight: 400
+            text-decoration: underline
+            font-size: 16px
+            &:hover
+                text-decoration: none 
+        p
+            text-align: center
+        .settings__subscribe,
+        .settings__sex
+            margin-bottom: 25px
+            input
+                display: inline-block
+                width: auto
+                visibility: hidden
+            label
+                position: relative
+                padding-left: 10px;
+                margin-left: 20px;
+        input[type="radio"] + .checkbox-indicator 
+            position: absolute
+            top: -1px
+            left: 0
+            width: 17px
+            height: 17px
+            border: 2px solid #000000
+        input[type="radio"] + .checkbox-indicator 
+            position: absolute
+            top: -1px
+            left: 0
+            width: 16px
+            height: 16px
+            border: 2px solid #d5d5d5
+            border-radius: 50%
+        input[type="radio"]:checked + .checkbox-indicator::before
+            content: ""
+            position: absolute
+            top: 3px
+            left: 3px
+            width: 10px
+            height: 10px
+            background-color: #ffca00
+            border-radius: 50%
+        input[type="checkbox"] + .checkbox-indicator 
+            position: absolute
+            top: 0px
+            left: -7px
+            width: 17px
+            height: 17px
+            border: 2px solid #d5d5d5
+        input[type="checkbox"]:checked + .checkbox-indicator::before
+                    content: ""
+                    position: absolute
+                    top: 11px
+                    left: 1px
+                    width: 5px
+                    height: 2px
+                    background-color: #ffca00
+        input[type="checkbox"]:checked + .checkbox-indicator::after 
+                    content: ""
+                    position: absolute
+                    top: 8px
+                    left: 2px
+                    width: 15px
+                    height: 2px
+                    background-color: #ffca00
+        input[type="checkbox"]:checked + .checkbox-indicator::before
+            transform: rotate(55deg)
+            z-index: 5
+        input[type="checkbox"]:checked + .checkbox-indicator::after
+            transform: rotate(-55deg)   
+    &__social 
+        width: 100%
+        p
+            margin-bottom: 5px       
+    &__social-wrp
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        justify-content: space-between
+        i 
+            font-size: 16px
+        a 
+            border: 1px solid #ffca00
+            width: 30%
+            text-align: center
+            border-radius: 5px
+            color: #000 !important
+            transition: all 1s
+            &:hover
+                background: #ffca00
+    &__profile-btn-save
+        background: #ffca00
+        border: none
+        padding: 5px 30px
+        margin-top: 30px
+        color: #fff
+        text-transform: uppercase
+        border-radius: 5px
+        transition: all 1s
+        &:hover
+            background: #edbc00            
+.change-data
+    padding: 20px
+    text-align: center
+    max-width: 350px
+    margin: 0 auto
+    h3
+        margin-bottom: 30px
+        font-weight: 500
+        text-align: center
+    label
+        text-align: center
+        margin-bottom: 10px
+        margin-top: 10px
+        // max-width: 300px
+        width: 100%
+    input
+        display: block
+        width: 100%
+        box-sizing: border-box
+        padding: 5px 10px
+        border: 1px solid #d5d5d5
+        border-radius: 5px
+        text-align: center
+        font-size: 16px
+        color: #4A4A4A
+        &:focus
+            box-shadow: 0 0 2px 1px #ffca00
+            outline: none
+    button
+        background: #ffca00
+        border: none
+        font-size: 18px
+        padding: 5px 30px
+        margin-top: 30px
+        color: #fff
+        text-transform: uppercase
+        border-radius: 5px
+        transition: all 1s
+        &:hover
+            background: #edbc00
+.main-register,
+.main-access
+    margin-left: 0
+    .settings__profile-wrp
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        border: 1px solid #dadada
+        border-radius: 10px
+    .register__agreement
+        padding-top: 20px
+        font-size: 16px
+.main-access
+    .btn-register
+        text-decoration: underline
+        color: #edbc00
+        &:hover
+            text-decoration: none
+.footer--center
+    margin-left: 0
